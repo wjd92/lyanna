@@ -44,7 +44,7 @@ class BaseModel(Model, metaclass=ModelMeta):
     id: int = fields.IntField(pk=True)
     created_at = fields.DatetimeField(auto_now_add=True)
 
-    property_fields: list[str]
+    property_fields: List[str]
 
     class Meta:
         abstract = True
