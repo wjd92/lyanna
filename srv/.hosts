@@ -1,8 +1,8 @@
 [blog]
-62.234.120.2 ansible_ssh_user=dongwm
+62.234.120.2 ansible_ssh_user=wangjindong
 
 [blog:vars]
-ansible_ssh_user=dongwm
+ansible_ssh_user=wangjindong
 domain=blog.pycourses.com
 app_name=lyanna
 git_commit_version=HEAD

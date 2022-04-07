@@ -22,7 +22,7 @@
   tasks:
   - name: Clone repo
     git:
-      repo: 'https://github.com/dongweiming/lyanna'
+      repo: 'https://github.com/wjd92/lyanna.git'
       dest: /home/{{ ansible_ssh_user }}/{{ app_name }}
       update: yes
       version: "{{ git_commit_version }}"
@@ -31,7 +31,7 @@
       requirements: /home/{{ ansible_ssh_user }}/{{ app_name }}/requirements.txt
       virtualenv: /home/{{ ansible_ssh_user }}/{{ app_name }}/venv
       virtualenv_site_packages: yes
-      virtualenv_python: python3.6
+      virtualenv_python: python3.8
   - name: Copy local setting file
     copy:
       src: files/local_settings.py
