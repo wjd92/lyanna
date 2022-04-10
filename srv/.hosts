@@ -1,8 +1,8 @@
 [blog]
-62.234.120.2 ansible_ssh_user=wangjindong
+tx01 ansible_ssh_user=wjd ansible_sudo_pass='annex522'
 
 [blog:vars]
-ansible_ssh_user=wangjindong
-domain=blog.pycourses.com
-app_name=lyanna
+ansible_ssh_user=wjd
+domain=bumpchicken.cn
+app_name=winterBlog
 git_commit_version=HEAD

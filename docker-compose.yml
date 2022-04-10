@@ -6,8 +6,8 @@ services:
     environment:
       MYSQL_DATABASE: 'test'
       MYSQL_USER: 'root'
-      MYSQL_PASSWORD: ''
-      MYSQL_ROOT_PASSWORD: ''
+      MYSQL_PASSWORD: '0000'
+      MYSQL_ROOT_PASSWORD: '0000'
       MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
     ports:
       - '3306:3306'
