@@ -1,0 +1,103 @@
+common:
+  debug: True
+  access_log: True
+  enable_debug_log: False
+  # 公网主机：1.117.54.99be
+  db_url: mysql://root:000000@172.18.0.3:4306/blog?charset=utf8mb4  # mysql 内网地址
+  redis_url: redis://172.18.0.4:6379   # redis容器内网地址
+  memcached_host: 172.18.0.5           # memcached容器内网地址
+  memcached_post: 11211
+  wtf_csrf_secret_key: 234
+  owner: wjd
+  site_title: Winter's Blog
+  per_page: 10
+  react_prompt: 喜欢这篇文章吗? 记得给我留言或订阅哦
+  google_analytics:
+  sentry_dsn:
+  request_timeout: 15
+  show_pageview: True
+  permalink_type: id
+  beian_id:
+  show_author: True
+  jwt_secret: lyanna
+  expiration_delta: 3600
+  wtf_csrf_enabled: False
+  blog_url: http://localhost:8000
+  cdn_domain:
+  redis_sentinel_service_host:
+  redis_sentinel_service_port: 26379
+  limit_rss_crawling: False
+  read_more: '<p>原文: <a href="{url}">{title}</a></p>'
+  comment_reactions:  # One is recommended
+    - heart
+    - upvote
+  site_nav_menus:
+    - endpoint: blog.index
+      name: 首页
+    - endpoint: blog.activities
+      name: 动态
+    - endpoint: blog.topics
+      name: 专题
+    - endpoint: blog.archives
+      name: 归档
+    - endpoint: blog.tags
+      name: 标签
+    - endpoint: index.search
+      name: 搜索
+#    - endpoint: /page/aboutme
+#      name: 关于我
+#    - endpoint: index.feed
+#      name: RSS
+#      icon: rss
+#      color: '#fc6423'
+
+oauth:
+  oauth_redirect_path: /oauth
+  redirect_uri: http://127.0.0.1:8000/oauth
+  client_id: 098a2e6da880878e05da
+  client_secret: 854cc0d86e61a83bb1dd00c3b23a3cc5b832d45c
+
+mail:
+  server: smtp.qq.com
+  port: 465
+  username:
+  password:
+
+partials:
+  - name: about_me
+    title: AboutMe
+    avatar: me.jpg  # = /static/upload/me.jpg
+    intro: Valar Morghulis
+    sns:
+    - twitter: example
+    - github: example
+    - douban: example
+    - linkedin: example
+    - instagram: example
+    - stack-overflow: example
+    - medium: example
+    - zhihu: example
+    - email: example
+    - wechat: wechat-qrcode.jpg
+    - weixingongzhonghao: wechat-subscription-account-qrcode.png
+#  - name: tagcloud
+#    title: 标签云
+#    count: 20
+#  - name: html
+#    title: 自定义HTML
+#    body: |
+#      <p>Hello <strong>World</strong>!!</p>
+  - name: latest_comments
+    title: 最新评论
+    count: 5
+    max_length: 65
+#  - name: blogroll
+#    title: 友情链接
+#    links:
+#      - title: 大明大明大明大明大明
+#        url: https://www.example.com
+#      - title: 小明
+#        url: https://www.example.com
+  - name: most_viewed
+    title: 最热文章
+    count: 5
