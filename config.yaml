@@ -3,9 +3,9 @@ common:
   access_log: True
   enable_debug_log: False
   # 公网主机：1.117.54.99be
-  db_url: mysql://root:000000@172.18.0.3:4306/blog?charset=utf8mb4  # mysql 内网地址
-  redis_url: redis://172.18.0.4:6379   # redis容器内网地址
-  memcached_host: 172.18.0.5           # memcached容器内网地址
+  db_url: mysql://root:000000@localhost:4306/blog?charset=utf8mb4  # mysql 内网地址
+  redis_url: redis://localhost:6379
+  memcached_host: localhost
   memcached_post: 11211
   wtf_csrf_secret_key: 234
   owner: wjd
