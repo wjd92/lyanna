@@ -4,5 +4,5 @@ tx01 ansible_ssh_user=wjd ansible_sudo_pass='annex522'
 [blog:vars]
 ansible_ssh_user=wjd
 domain=bumpchicken.cn
-app_name=winterBlog
+app_name=boc
 git_commit_version=HEAD
