@@ -3,6 +3,6 @@ tx01 ansible_ssh_user=wjd ansible_sudo_pass='annex522'
 
 [blog:vars]
 ansible_ssh_user=wjd
-domain=bumpchicken.cn
+domain=1.117.54.99
 app_name=boc
 git_commit_version=HEAD
