@@ -56,7 +56,7 @@
   - name: Template nginx site config
     template:
       src: templates/nginx.conf
-      dest: /etc/nginx/sites-enabled/blog.conf
+      dest: /etc/nginx/conf.d/blog.conf
   - name: Template supervisor config
     template:
       src: templates/supervisord.conf

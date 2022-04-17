@@ -133,6 +133,8 @@ class mc:
         redis = await get_redis()
         if redis is None:
             return []
+        if not keys:
+            return []
         values = await redis.mget(*[k.encode('utf-8') for k in keys])
 
         rs = []

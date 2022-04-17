@@ -69,17 +69,17 @@ partials:
     avatar: me.jpg  # = /static/upload/me.jpg
     intro: Valar Morghulis
     sns:
-    - twitter: example
-    - github: example
-    - douban: example
-    - linkedin: example
-    - instagram: example
-    - stack-overflow: example
-    - medium: example
-    - zhihu: example
-    - email: example
-    - wechat: wechat-qrcode.jpg
-    - weixingongzhonghao: wechat-subscription-account-qrcode.png
+#    - twitter: example
+#    - github: example
+#    - douban: example
+#    - linkedin: example
+#    - instagram: example
+#    - stack-overflow: example
+#    - medium: example
+#    - zhihu: example
+#    - email: 954029292@qq.com
+    - wechat: my-wechat.jpg
+#    - weixingongzhonghao: wechat-subscription-account-qrcode.png
 #  - name: tagcloud
 #    title: 标签云
 #    count: 20
