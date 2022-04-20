@@ -63,13 +63,13 @@
       dest: /etc/supervisor/conf.d/{{ app_name }}.conf
   #- name: Reload Supervisord
   #  systemd: name=supervisor state=reloaded enabled=yes
-#  - name: Restart the blog app
-#    supervisorctl:
-#      name: "{{ app_name }}"
-#      state: restarted
-  - name: 启动服务
-    command:
-      cmd: sudo supervisorctl restart {{ app_name }}
+  - name: Restart the blog app
+    supervisorctl:
+      name: "{{ app_name }}"
+      state: restarted
+#  - name: 启动服务
+#    command:
+#      cmd: sudo supervisorctl restart {{ app_name }}
   - name: Restart nginx
     systemd: name=nginx state=reloaded enabled=yes
 

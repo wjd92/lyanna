@@ -9,7 +9,7 @@ common:
   memcached_post: 11211
   wtf_csrf_secret_key: 234
   owner: wjd
-  site_title: Winter's Blog
+  site_title: Bumpchicken's tech warehouse
   per_page: 10
   react_prompt: 喜欢这篇文章吗? 记得给我留言或订阅哦
   google_analytics:
@@ -67,7 +67,7 @@ partials:
   - name: about_me
     title: AboutMe
     avatar: me.jpg  # = /static/upload/me.jpg
-    intro: Valar Morghulis
+    intro: 在某外卖大厂搬砖的huster
     sns:
 #    - twitter: example
 #    - github: example
